@@ -1,0 +1,23 @@
+1. Get list of buying and selling price
+	url: api/buying_selling_price_list
+	method: GET
+
+2. Buy or Sell Currency 
+	url: buy_sell/orders/buy_sell_currency
+	method: POST
+	params: to_currency=(currency id of converting to)
+			from_currency=(currency id of converting from)
+			price=(price of currency)
+			volume=(volume of currency)
+			total_amount=(total amount)
+
+3. Buy sell history
+	url: buy_sell/orders/buy_sell_history
+	method: GET
+	params: currency=(currency id for which we need to fetch buye and sell history)
+
+
+3. Subscribe newsletter
+	url: api/subscribe_newsletter
+	method: POST
+	params: email
